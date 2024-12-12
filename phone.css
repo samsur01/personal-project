@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/*Nav bar design start*/
+.nav-bar{
+    background-color: #00b894;
+    padding: 10px;
+    text-align: center;
+}
+.nav-logo img{
+    height: 40px;
+}
+.nav-title h2{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform:uppercase ;
+}
+.nav-menu a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/*For Mobile*/
+[class*="col-"]{
+    width: 100%;
+}
+.nav-title h2{
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+}
+.nav-menu a{
+    margin-top: 7px;
+    background-color:#00cec9 ;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav-menu a:hover{
+    background-color: gray;
+}
+
+/* Profile design starts from here */
+.profile{
+    text-align: center;
+    padding: 130px 10px;
+    position: relative;
+}
+.profile .top-wather{
+    position: absolute;
+    right: 60px;
+    top: 15px;
+    transform: 2s;
+    transition: 2s;
+}
+.profile .top-wather:hover{
+     transform: rotate(360deg);
+}
+.profile-des p{
+    color: gray;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+.profile .bottom-wather{
+    position: absolute;
+    left: 60px;
+    bottom: 15px;
+    transform: 2s;
+    transition: 2s;
+}
+.profile .bottom-wather:hover{
+     transform: rotate(360deg);
+}
+/* About me design starts here */
+.about-me-div{
+    text-align: center;
+    color:white;
+    background-color: #39a4a6;
+    padding: 20px 30px;
+}
+.about-me-div h1{
+    text-align: center;
+}
+.totted-hr{
+    border:dotted 6px white ;
+    border-bottom: none;
+    width: 100px;
+    margin: 20px auto;
+}
+.about-img img{
+    border: 5px solid white  ;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.about-des p{
+    text-align: center;
+    padding: 20px 0;
+}
+.about-des a{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+.cv-button{
+    background-color: #052d2f;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
+
+/* About me design ends here */
+
+/* Profesional skills starts here */
+.experiance{
+    padding: 5px 0;
+}
+.experiance .card{
+    background-color:#a39e9e ;
+    border-radius: 5px;
+    padding: 10px 40px;
+    height: 600px;
+    transition: .3s;
+}
+.experiance .card-logo img{
+    width: 80px;
+    margin:20px;
+}
+.experiance .roundet-img{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 10px;
+}
+.experiance .card-title h2{
+    background-color: #616161;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+.experiance .card-logo{
+    text-align: center;
+}
+.experiance .card:hover{
+    box-shadow: 0px 4px 8px black;
+}
+
+/* Profesional skills ends here */
+
+/* skills-container design starts here */
+.skills-container{
+    padding-right: 40px;
+}
+.skills-container li{
+    list-style: none;
+    margin: 30px 10px;
+    font-weight: bolder;
+    position: relative;
+}
+.skills-container li::before{
+    position: absolute;
+    content: '';
+    background-color: rgb(86,86,153,.5);
+    top: calc(100% + 5px) ;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    border-radius: 1000px;
+
+}
+.skills-container li::after{
+    position: absolute;
+    content: '';
+    background-color: rgb(86,86,153,1);
+    top: calc(100% + 5px) ;
+    left: 0px;
+    width: 0%;
+    height: 10px;
+    border-radius: 1000px;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;
+    animation-fill-mode: forwards;
+
+}
+.skills-container li.html::after{
+    animation-name: html;
+}
+@keyframes html {
+    to{
+        width: 90%;
+    }
+}
+.skills-container li.css::after{
+    animation-name: css;
+}
+@keyframes css {
+    to{
+        width: 70%;
+    }
+}
+.skills-container li.bt::after{
+    animation-name: bt;
+}
+@keyframes bt {
+    to{
+        width: 50%;
+    }
+}
+.skills-container li.java::after{
+    animation-name: java;
+}
+@keyframes java {
+    to{
+        width: 50%;
+    }
+}
+.skills-container li.jquery::after{
+    animation-name: jquery;
+}
+@keyframes jquery {
+    to{
+        width: 60%;
+    }
+}
+.skills-container li.node-js::after{
+    animation-name: node-js;
+}
+@keyframes node-js {
+    to{
+        width: 50%;
+    }
+}
+.skills-container li.react-js::after{
+    animation-name: react-js;
+}
+@keyframes react-js {
+    to{
+        width: 80%;
+    }
+}
+/* skills-container desigb ends here */
+
+
+/* contact-info design starts herre */
+.contact-info{
+    padding: 2% 7%;
+    background-color: #39a4ac;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+.mid-contact{
+    text-align: center;
+}
+.mid-contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    resize: none;
+}
+.mid-contact button{
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    width: 100px;
+}
+
+.right-contact{
+    text-align: center;
+}
+.right-contact .btn-m{
+    font-size: 32px;
+    border: none;
+    padding: 5px;
+    border-radius: 25px;
+    width: 50px;
+    margin: 10px;
+}
+.right-contact .btn-m:hover{
+    background-color: gray;
+}
+
+/* contact-info design ends here */
+
+/* footer design starts from here */
+.footer{
+    background-color: #616161;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.footer-menu a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 15px;
+}
+.footer-menu a:hover{
+    background-color: gray;
+    color: #00b894;
+}
+
+/* footer design end from here */

@@ -1,0 +1,115 @@
+/* For Dekstop*/ 
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+/*menu design*/
+.nav-bar{
+    height: 40px;
+    padding: 0px 10px;
+}
+.nav-logo{
+    text-align: left;
+}
+.nav-logo img{
+    height: 25px;
+}
+.nav-title h2{
+    text-align: right;
+    font-size: 20px;
+    padding: 0 10px;
+}
+.nav-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav-menu a{
+    background-color: transparent;
+    font-size: 15px;
+    padding: 0 10px;
+}
+/* menu design ends here */
+
+/* profile starts here */
+
+.profile .top-wather{
+    right: 100px;
+    top: 15px;
+    transform: 2s;
+    transition: 2s;
+    width: 120px;
+}
+.profile .top-wather:hover{
+    width: 140px;
+}
+
+.profile-des p{
+    color: gray;
+    text-align: center;
+    width: 50%;
+    margin: 5px auto 20px auto;
+}
+.profile .bottom-wather{
+    left: 140px;
+    bottom: 15px;
+    transform: 2s;
+    transition: 2s;
+    width: 120px;
+}
+.profile .bottom-wather:hover{
+    width: 140px;
+}
+/* profile starts here */
+
+/* Abou design starts here */
+.about-img{
+    margin-top: 100px;
+}
+.about-img img{
+    height: 250px;
+    width: 250px;
+}
+.about-des p{
+    text-align: left;
+}
+
+/* Abou design ends here */
+
+
+/* contact info design starts here */
+
+.contact-info .left-contact{
+    padding-right: 20px;
+}
+.media-buttons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 200px;
+}
+.right-contact{
+    position: relative;
+}
+/* contact info design ends here */
+
+/* footer design starts from here */
+
+.footer-des{
+    margin-top: 8px;
+}
+.footer-menu a{
+    display: inline;
+    margin: 10px;
+}
+
+/* footer design ends form here */
